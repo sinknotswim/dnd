@@ -1,0 +1,49 @@
+<!DOCTYPE = html>
+<html>
+<head>
+<title>Registration</title>
+<link href="base.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h1>Wichita State University D&D Club</h1>
+<hr>
+<h2>Registration</h2>
+<p>Please register below, or sign-in <a href="Login.html">here.</a> You can also see more information <a href="About.html">here.</a></p>
+	<form onsubmit="submitted()">
+		<table>
+			<tr>
+	<td><input name="username" type="text" placeholder="enter username" required>
+	<input name="password" type="text" placeholder="enter password" required></td>
+	</tr><tr>
+	<td><input name="fname" type="text" placeholder="first name" required>
+	<input name="lname" type="text" placeholder="last name" required></td>
+	</tr><tr>
+	<td>Optionally, what are your pronouns?</td>
+	<!--pronouns and exp are optional, never want to scare anyone away, also said in about regards to new players-->
+	</tr><tr>
+	<td><input name="pronouns" type="radio" value="h"> He/Him</td>
+	</tr><tr>
+	<td><input name="pronouns" type="radio" value="s"> She/Her</td>
+	</tr><tr>
+	<td><input name="pronouns" type="radio" value="t"> They/Them</td>
+	</tr><tr>
+	<td><input name="pronouns" type="radio" value="o"> Other</td>
+	</tr><tr>
+	<td>Optionally, are you experienced in 5e?</td>
+	</tr><tr>
+	<td><input name="exp" type="radio" value="y"> Yes</td>
+	</tr><tr>
+	<td><input name="exp" type="radio" value="n"> No</td>
+	</tr>
+	</table>
+	<input type="submit" name="submit">
+	</form>
+<script>
+function submitted() {
+alert("Welcome! Adventure awaits!");
+}
+<!--adventure awaits is a corny phrase my dm used the first time I played, so I wanted to add in a little event to say something encouraging-->
+</script>
+<h3><a href="About.html">Return.</a></h3>
+</body>
+</html>

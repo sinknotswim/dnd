@@ -1,0 +1,31 @@
+<!DOCTYPE = html>
+<html>
+<head>
+<title>Login</title>
+<link href="base.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h1>Wichita State University D&D Club</h1>
+<hr>
+<h2>Sign-in</h2>
+<p>Please sign-in below, or register <a href="Registration.html">here.</a> You can also see more information <a href="About.html">here.</a></p>
+	<form name="log" onsubmit="valid()">
+	<input name="first" type="text" placeholder="email BEFORE @" required>
+	<input name="second" type="text" placeholder="email AFTER @" required>
+	<input name="password" type="text" placeholder="enter password" required>
+	<input type="submit" name="submit">
+	</form>
+<script>
+function valid() {
+var x = document.forms["log"]["second"].value;
+if (x=="@shockers.wichita.edu") {
+alert("Welcome back shocker!");
+}
+<!--login must have wsu email, else alerts the invalid message-->
+else  {
+alert("Invalid!");
+}
+}
+</script>
+</body>
+</html>

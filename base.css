@@ -1,0 +1,54 @@
+<!DOCTYPE = html>
+<html>
+
+li {
+	text-align: right;
+}
+
+* {
+	background-color:lightgray;
+}
+
+h1 {
+	text-align: right;
+	color: white;
+	text-transform: uppercase;
+}
+
+h2 {
+	text-align: right;
+	color: white;
+	text-transform: uppercase;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+li a {
+	text-decoration: none;
+} 
+
+li a:hover {
+	background-color: white;
+}
+
+@keyframes ani{
+1% {background-color:gray;}
+0% {background-color: lightgray;}
+50% {background-color:white;}
+100% {background-color:lightgray;}
+}
+
+
+div {
+	animation-name:ani;
+	animation-duration:2s;
+	animation-iteration-count:infinite;
+}
+
+/* I don't know why the first tab doesn't work, so I just put in a nonesense tag 'li' so the rest worked */
+/* had the same issue with first percent in keyframes, so I just put in a nonesense tag '1%' so the rest worked */
+/* I figured out that by combining a background color and the 'intended' original animation it makes just the in-betweens flash, which was cool. */
